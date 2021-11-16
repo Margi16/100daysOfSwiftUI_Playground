@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import Foundation
+
+//  How to store truth with Booleans
+let filename = "paris.jpg"
+//  hasSuffix checks if the given suffix is there in the mentioned variable and returns a boolean value, same with hasPrefix
+print(filename.hasSuffix(".jpg"))
+
+let number = 120
+//  isMultiple checks if the given number is multiple of mentioned variable and returns a boolean value
+print(number.isMultiple(of: 3))
+
+let goodDogs = true
+var gameOver = false
+print(gameOver)
+//  toggle() turns it on and off, i.e changes the value from true to false or vice versa 
+gameOver.toggle()
+print(gameOver)
+
+//  isMultiple checks if the given number is multiple of mentioned variable and returns a boolean value
+//  we can store the boolean values like this in a variable
+//  we can't apply any arithmetic operators on boolean like +,-,*,/.
+let isMultiple = 120.isMultiple(of: 3)
+
+var isAuthenticated = false
+//  ! is just like toggle(), it gives the opposite value of the mentioned variable
+isAuthenticated = !isAuthenticated
+print(isAuthenticated)
+//  ! is just like toggle(), it gives the opposite value of the mentioned variable
+isAuthenticated = !isAuthenticated
+print(isAuthenticated)
+
+//  How to join strings together
+let firstPart = "Hello, "
+let secondPart = "world!"
+//  we can join them by giving + operator
+let greeting = firstPart + secondPart
+
+let people = "Haters"
+let action = "hate"
+//  we can use + operator multiple times as well
+//  this is called operator overloading - the ability for one operator suc as + to mean different things depending on how it's used, like for adding strings, or adding int or double as well
+let lyric = people + " gonna " + action
+print(lyric)
+
+//  don't practice joining strings like this, as each time swift sees two strings being joined together using + it has to make a new string out of them before continuing, and if you have lots of things being joined its quite wasteful.
+//  like here its first "1", then "12", then "123", and so on
+let luggageCode = "1" + "2" + "3" + "4" + "5"
+
+let quote = "Then he tapped a sign saying \"Believe\" and walked away."
+
+let name = "Taylor"
+let age = 26
+//  Instead of operator overloading, use string interpolation as given here
+//  \ backward slash always gives a special treatment in strings, like \" for double quotes in strings and \() for inserting Int, Double.
+let message = " Hello my name is \(name) and I'm \(age) years old."
+print(message)
+
+let number2 = 11
+//  let missionMessage = " Apollo " + number2 + " landed on the moon."
+//  if we could have written in the above way, then it could not have worked and given an error as swift won't add integer/decimal to string
+let missionMessage = " Apollo " + String(number2) + " landed on the moon."
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 2716}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
